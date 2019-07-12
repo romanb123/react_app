@@ -1,0 +1,38 @@
+class component skelet:
+import React, { Component } from 'react';
+
+class App extends Component {
+  state = {
+   
+  }
+  render() {
+   
+    );
+  }
+}
+
+export default App;
+======================================================================================================================
+function component+mapping elements:
+
+let Missions = (props) => {
+    const listItems = props.todos.map((mission) =>
+        <div key={mission.id}>
+            <p>{mission.id}</p>
+            <p>{mission.value}</p>
+        </div>
+    );
+    return (
+        <ul>
+            {listItems}
+        </ul>
+    );
+}
+export default Missions;
+
+======================================================================================================================
+style inline example:
+
+style={{width:"18rem"}}
+
+======================================================================================================================
