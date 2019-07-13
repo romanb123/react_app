@@ -20,10 +20,10 @@ class App extends Component {
     console.log(updated);
     this.setState({ mission: updated });
   }
-  deletemission = (button) => {
-    console.log(button.target.id);
+  deletemission = (i) => {
+    console.log(i);
     var afterdelete = [...this.state.mission];
-    afterdelete.splice(button.target.id, 1);
+    afterdelete.splice(i, 1);
     console.log(afterdelete);
     this.setState({ mission: afterdelete });
 

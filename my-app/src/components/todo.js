@@ -6,7 +6,7 @@ let Missions = (props) => {
                 <h5 className="card-title">{mission.id}</h5>
                 <p className="card-text">{mission.value}</p>
             </div>
-            <button id={i} onClick={props.delete} className="btn btn-primary" style={{ margin: "auto", width: "25%", backgroundColor: "white", color: "blue" }}>delete</button>
+            <button id={i} onClick={() => props.delete(i)} className="btn btn-primary" style={{ margin: "auto", width: "25%", backgroundColor: "white", color: "blue" }}>delete</button>
         </div>
     );
     return (

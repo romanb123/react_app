@@ -87,3 +87,6 @@ expample of splice:
 afterdelete.splice(button.target.id, 1);
 splice(what element of array,how many elements)
 ======================================================================================================================
+way to pass value by property:
+onClick={() => props.delete(value to pass)} 
+======================================================================================================================
