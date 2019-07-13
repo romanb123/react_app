@@ -36,3 +36,24 @@ style inline example:
 style={{width:"18rem"}}
 
 ======================================================================================================================
+get value from form:
+
+
+!!name to the input field
+<div>
+            <form onSubmit={props.addnew}>
+                <div className="form-group">
+                    <label >new missions</label>
+                    <input type="text" name="text" className="form-control-range" id="formControlRange"></input>
+                </div>
+                <button type="submit" className="btn btn-primary">Primary</button>
+            </form>
+            {listItems}
+        </div>
+
+ addmission = (e) => {
+    e.preventDefault();
+    console.log(e.target.text.value);
+  }
+
+======================================================================================================================

@@ -1,5 +1,4 @@
 import React from 'react';
-
 let Missions = (props) => {
     console.log(typeof props.todos);
     console.log(props.todos);
@@ -15,10 +14,10 @@ let Missions = (props) => {
         <div>
             <form onSubmit={props.addnew}>
                 <div className="form-group">
-                    <label for="formControlRange">new missions</label>
-                    <input type="text" className="form-control-range" id="formControlRange"></input>
+                    <label >new missions</label>
+                    <input type="text" name="text" className="form-control-range" id="formControlRange"></input>
                 </div>
-                <button type="button" className="btn btn-primary">Primary</button>
+                <button type="submit" className="btn btn-primary">Primary</button>
             </form>
             {listItems}
         </div>
