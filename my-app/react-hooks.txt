@@ -57,3 +57,33 @@ get value from form:
   }
 
 ======================================================================================================================
+check the type example:
+console.log(typeof 42);
+======================================================================================================================
+to auto order key=second argument to may method:
+
+const listItems = props.todos.map((mission, i) =>
+        <div key={i} className="card" style={{ width: "100%", backgroundColor: "white", color: "blue", marginTop: "25px" }}>
+            <div className="card-body">
+                <h5 className="card-title">{mission.id}</h5>
+                <p className="card-text">{mission.value}</p>
+            </div>
+        </div>
+    );
+======================================================================================================================
+auto order id+add new value to the state:
+addmission = (e) => {
+    e.preventDefault();
+    var updated = [...this.state.mission];
+    var newvalue = {};
+    newvalue.id = updated.length;
+    newvalue.value = e.target.text.value;
+    updated.push(newvalue);
+    console.log(updated);
+    this.setState({ mission: updated });
+  }
+======================================================================================================================
+expample of splice:
+afterdelete.splice(button.target.id, 1);
+splice(what element of array,how many elements)
+======================================================================================================================
