@@ -4,9 +4,7 @@ import Missions from './components/todo';
 class App extends Component {
   state = {
     mission: [
-      { id: 0, value: "value" },
-      { id: 1, value: "value" },
-      { id: 2, value: "value" },
+
 
     ]
   }
@@ -24,6 +22,9 @@ class App extends Component {
     console.log(i);
     var afterdelete = [...this.state.mission];
     afterdelete.splice(i, 1);
+    for (let index = 0; index < afterdelete.length; index++) {
+      afterdelete[index].id = index;
+    }
     console.log(afterdelete);
     this.setState({ mission: afterdelete });
 
