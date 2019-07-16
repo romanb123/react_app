@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://romanb123.github.io/react_app/",
   "dependencies": {
     "gh-pages": "^2.0.1",
