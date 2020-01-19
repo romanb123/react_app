@@ -33,7 +33,7 @@ class App extends Component {
     return (
 
       <div style={{ textAlign: "center" }}>
-        <h1>app</h1>
+        <h1>to do list</h1>
         <Missions todos={this.state.mission} addnew={this.addmission} delete={this.deletemission} />
       </div>
     );

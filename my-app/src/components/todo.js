@@ -16,7 +16,7 @@ let Missions = (props) => {
                     <label >new missions</label>
                     <input type="text" name="text" className="form-control-range" id="formControlRange"></input>
                 </div>
-                <button type="submit" className="btn btn-primary">Primary</button>
+                <button type="submit" className="btn btn-primary">add</button>
             </form>
             {listItems}
         </div>
